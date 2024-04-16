@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const path = require('path');
-
 
 const url = 'mongodb+srv://webb:stacy2024@moraes.mgm1rdp.mongodb.net/';
 const dbName = 'moraes';
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors()); // Habilita o CORS
 
 app.get('/download', async (req, res) => {
   try {
