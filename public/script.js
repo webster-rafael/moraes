@@ -11,7 +11,7 @@ document
       const site = document.getElementById("site");
       site.value = "";
       try {
-        const response = await fetch("/");
+        const response = await fetch("/download");
         const data = await response.json();
         console.log(data); // Faça o que quiser com os dados recebidos
         const blob = await response.blob();
