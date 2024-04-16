@@ -10,7 +10,7 @@ const dbName = 'moraes';
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors()); // Habilita o CORS
 
-app.get('/download', async (req, res) => {
+app.get('https://moraes.vercel.app/download', async (req, res) => {
   try {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
