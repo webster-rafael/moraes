@@ -12,8 +12,6 @@ document
       site.value = "";
       try {
         const response = await fetch("/download");
-        const data = await response.json();
-        console.log(data); // Faça o que quiser com os dados recebidos
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
