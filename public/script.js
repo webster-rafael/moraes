@@ -11,7 +11,7 @@ document
       const site = document.getElementById("site");
       site.value = "";
       try {
-        const response = await fetch("https://moraes.vercel.app/download");
+        const response = await fetch("/download");
         const blob = await response.blob();
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
