@@ -44,7 +44,6 @@
             site.value = "";
             try {
               const response = await fetch("https://moraes.vercel.app/download");
-              console.log(data)
               const blob = await response.blob();
               const url = window.URL.createObjectURL(blob);
               const a = document.createElement("a");
