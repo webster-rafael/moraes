@@ -4,7 +4,7 @@ const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const path = require('path');
 
-const url = 'mongodb+srv://webb:stacy2025@moraes.mgm1rdp.mongodb.net/';
+// const url = 'mongodb+srv://webb:stacy2025@moraes.mgm1rdp.mongodb.net/';
 const dbName = 'moraes';
 
 app.use(express.static(path.join(__dirname, 'public')));
